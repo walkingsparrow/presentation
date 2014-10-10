@@ -1,0 +1,19 @@
+Test of Running R code from Go Slides
+Oct 3, 2014
+
+Hai Qian
+Senior Software Engineer, Pivotal Inc
+hqian@pivotal.io
+
+* Target of this presentation
+
+- Show that we can run R code
+
+* Show some R code
+
+    library(PivotalR)
+    db.connect(port = 5333, dbname = 'madlib')
+    
+* R code that can run
+
+.play test01/test01.go /Start OMIT/,/End OMIT/
