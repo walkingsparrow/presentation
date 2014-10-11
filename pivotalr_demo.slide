@@ -1,8 +1,11 @@
-A Complete Introduction to PivotalR
+An Introduction to PivotalR
+Oct. 2014
 
 Hai Qian
 Predictive Analytics Team, Pivotal Software
 hqian@pivotal.io
+
+# +++++++++++++++++++++++++++++
 
 * Contents
 
@@ -11,16 +14,134 @@ hqian@pivotal.io
 - MADlib wrapper functions
 - Quick prototypes
 - PL/R support
-- Testing 
+- Testing
+
+# ++++++++++++++++++++++++++++++
 
 * Overview
 
+# ++++++++++++++++++++++++++++++
+
+* Why R ?
+
+- R is becoming the most popular tool
+
+.image pivotalr_demo/R_trend1.png _ 600
+
+* Why R ?
+
+- R will become the most popular tool by the time of 2015
+
+.image pivotalr_demo/R_trend2.png _ 600
+
+* Why R ?
+
+- One of the most used tools by data scientists (Strata 2013 survey)
+
+.image pivotalr_demo/R_trend3.png _ 800
+
+# ++++++++++++++++++++++++++++++
+
+* Why PivotalR ?
+
+- Big data
+
+- Parallel
+
+- Machine learning
+
+- MPP databases
+
+# ++++++++++++++++++++++++++++++
+
+* Big data • Parallel • MPP database
+
+.image pivotalr_demo/mpp.png
+
+# ++++++++++++++++++++++++++++++
+
+* Work flow
+
+- Light weight client of Greenplum/HAWQ database
+
+.image pivotalr_demo/pivotalr.png _ 800
+
+# ++++++++++++++++++++++++++++++
+
+* Quick start
+
+- Install the package from CRAN or GitHub
+
+    install.packages("PivotalR") # from CRAN
+
+    ## install.packages("devtools")
+    devtools::install_github("PivotalR", "pivotalsoftware") # from GitHub
+
+- Load the package in your R session
+
+    library(PivotalR)
+    
+- Connect to a database
+
+    db.connect(port = 5333, dbname = 'madlib') # Postgres database
+    db.connect(port = 16526, dbname = 'madlib') # Greenplum database
+    db.connect(port = 18526, dbname = 'madlib') # HAWQ database
+    db.list()
+    
+- Create a wrapper of a data table
+
+    dat <- db.data.frame('madlibtestdata.dt_abalone')
+
+# ++++++++++++++++++++++++++++++
+
 * Data operations
+
+# ++++++++++++++++++++++++++++++
+
+* Translate
+
+- what
+
+# ++++++++++++++++++++++++++++++
 
 * MADlib wrapper functions
 
+# ++++++++++++++++++++++++++++++
+
+* What is MADlib ?
+
+- In-database machine learning ...
+
+.image pivotalr_demo/madlib.png 500 _
+
+# ++++++++++++++++++++++++++++++
+
 * Quick prototypes
+
+# ++++++++++++++++++++++++++++++
+
+* Help data scientists
+
+- create machine learning prototypes easily
+
+# ++++++++++++++++++++++++++++++
 
 * PL/R support
 
+# ++++++++++++++++++++++++++++++
+
+* Still under development
+
+- plr.map, plr.reduce etc
+
+# ++++++++++++++++++++++++++++++
+
 * Testing
+
+# ++++++++++++++++++++++++++++++
+
+* Testing framework
+
+- Based on testthat
+
+.image pivotalr_demo/pivotalr_testing.png
