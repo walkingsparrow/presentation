@@ -83,18 +83,23 @@ hqian@pivotal.io
     
 - Connect to a database
 
-    db.connect(port = 5333, dbname = 'madlib') # Postgres database
-    db.connect(port = 16526, dbname = 'madlib') # Greenplum database
-    db.connect(port = 18526, dbname = 'madlib') # HAWQ database
-    db.list()
+.play pivotalr_demo/demo_connect.go /Start OMIT/,/End OMIT/
     
 - Create a wrapper of a data table
 
-    dat <- db.data.frame('madlibtestdata.dt_abalone')
+.play pivotalr_demo/demo_db_data_frame.go /Start OMIT/,/End OMIT/
 
 # ++++++++++++++++++++++++++++++
 
 * Data operations
+
+# ++++++++++++++++++++++++++++++
+
+* Data table wrapper
+
+- Contains a small amount of info 
+
+.play pivotalr_demo/demo_wrapper.go /Start OMIT/,/End OMIT/
 
 # ++++++++++++++++++++++++++++++
 
