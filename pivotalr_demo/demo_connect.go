@@ -17,8 +17,8 @@ func main() {
 /* Show in the slide
 // Start OMIT
 
-pg <- db.connect(port = 5333, dbname = 'madlib')  # 1, Postgres database
 gp <- db.connect(port = 16526, dbname = 'madlib') # 2, Greenplum database
+pg <- db.connect(port = 5333, dbname = 'madlib')  # 1, Postgres database
 hq <- db.connect(port = 18526, dbname = 'madlib') # 3, HAWQ database
 db.list()
 

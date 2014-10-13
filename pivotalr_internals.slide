@@ -4,6 +4,21 @@ Oct. 2014
 Hai Qian
 Predictive Analytics Team, Pivotal Software
 
+# +++++++++++++++++++++++++++++
+
 * Contents
 
 - Overview
+- Testing
+
+# ++++++++++++++++++++++++++++++
+
+* Testing
+
+# ++++++++++++++++++++++++++++++
+
+* Testing framework
+
+- Based on testthat
+
+.image pivotalr_internals/pivotalr_testing.png

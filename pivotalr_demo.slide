@@ -14,7 +14,6 @@ hqian@pivotal.io
 - MADlib wrapper functions
 - Quick prototypes
 - PL/R support
-- Testing
 
 # ++++++++++++++++++++++++++++++
 
@@ -101,6 +100,7 @@ hqian@pivotal.io
 
 .play pivotalr_demo/demo_wrapper.go /Start OMIT/,/End OMIT/
 
+
 # ++++++++++++++++++++++++++++++
 
 * Translate
@@ -139,14 +139,4 @@ hqian@pivotal.io
 
 - plr.map, plr.reduce etc
 
-# ++++++++++++++++++++++++++++++
 
-* Testing
-
-# ++++++++++++++++++++++++++++++
-
-* Testing framework
-
-- Based on testthat
-
-.image pivotalr_demo/pivotalr_testing.png

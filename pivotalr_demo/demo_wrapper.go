@@ -18,6 +18,8 @@ func main() {
 // Start OMIT
 
 dat
+dim(dat)
+names(dat)
 
 // End OMIT
 */
