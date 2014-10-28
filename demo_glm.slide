@@ -1,0 +1,85 @@
+PivotalR Wrapper for GLM
+Oct. 2014
+
+Hai Qian
+Predictive Analytics Team, Pivotal Software
+hqian@pivotal.io
+
+# ------------------------------------------------------------
+
+* Data Table Wrapper
+
+- Connect to a database as usual
+
+.play demo_glm/connect.go /Start OMIT/,/End OMIT/
+
+- Create a table wrapper
+
+.play demo_glm/table_wrapper.go /Start OMIT/,/End OMIT/
+
+- Look at the data
+
+.play demo_glm/lookat.go /Start OMIT/,/End OMIT/
+
+# ------------------------------------------------------------
+
+* Generalized Linear Model
+
+- User doc
+
+.play demo_glm/glm_manual.go /Start OMIT/,/End OMIT/
+
+- Supported families and link functions
+
+    - gaussian : identity, log, inverse
+
+    - binomial : logit, probit
+
+    - poisson  : log, identity, sqrt
+
+    - Gamma    : inverse, identity, log
+
+    - inverse.gaussian : 1/mu^2, log, identity, inverse
+
+# ------------------------------------------------------------
+
+* Example
+
+- `poisson(log)`
+
+.play demo_glm/example1.go /Start OMIT/,/End OMIT/
+
+- Predictions
+
+.play demo_glm/predict1.go /Start OMIT/,/End OMIT/
+
+- `AIC`
+
+.play demo_glm/aic1.go /Start OMIT/,/End OMIT/
+
+- Grouping support
+
+.play demo_glm/grouping1.go /Start OMIT/,/End OMIT/
+
+# ------------------------------------------------------------
+
+* `gaussian(identity)` and `binomial(logit)`
+
+- Default: use the old linear and logistic regressions
+
+    madlib.glm(rings ~ length + diameter + shell + sex, data = x, family = gaussian)
+
+    madlib.glm(rings < 10 ~ length + diameter + shell + sex, data = x, family = binomial)
+
+- Can choose to use our new GLM implmentation
+
+    madlib.glm(rings ~ length + diameter + shell + sex, data = x, family = gaussian,
+               control = list(use.glm=TRUE))
+
+    madlib.glm(rings < 10 ~ length + diameter + shell + sex, data = x, family = binomial,
+               control = list(use.glm=TRUE))
+
+- Other `control` parameters
+
+    max.iter, tolerance ...
+

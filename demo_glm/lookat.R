@@ -1,0 +1,8 @@
+suppressMessages(library(PivotalR))
+gp <- db.connect(port=16526, dbname='madlib', host='127.0.0.1', user='gpadmin', verbose=F) # 1, Greenplum database
+x <- db.data.frame('madlibtestdata.dt_abalone', verbose=F)
+dim(x)
+cat("--------------------------------------\n")
+names(x)
+cat("--------------------------------------\n")
+lookat(x, 10)
