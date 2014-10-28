@@ -17,9 +17,9 @@ func main() {
 /* Show in the slide
 // Start OMIT
 
-gp <- db.connect(port = 16526, dbname = 'madlib') # 2, Greenplum database
-pg <- db.connect(port = 5333, dbname = 'madlib')  # 1, Postgres database
-hq <- db.connect(port = 18526, dbname = 'madlib') # 3, HAWQ database
+gp <- db.connect(port=16526, dbname='madlib', host='127.0.0.1', user='gpadmin') # 1, Greenplum database
+pg <- db.connect(port=5333, dbname='madlib', host='127.0.0.1', user='gpadmin')  # 2, Postgres database
+hq <- db.connect(port=18526, dbname='madlib', host='127.0.0.1', user='gpadmin') # 3, HAWQ database
 db.list()
 
 // End OMIT
