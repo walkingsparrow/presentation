@@ -17,8 +17,8 @@ func main() {
 /* Show in the slide
 // Start OMIT
 
-p <- predict(f)
-lk(cbind(x$rings, p), 10)
+p <- predict( f )
+lk( cbind( x$rings, p ), 10 )
 
 // End OMIT
 */

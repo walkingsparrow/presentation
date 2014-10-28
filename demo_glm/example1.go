@@ -17,7 +17,7 @@ func main() {
 /* Show in the slide
 // Start OMIT
 
-f <- madlib.glm(rings ~ . - id, data = x, family = poisson(log))
+f <- madlib.glm( rings ~ . - id, data = x, family = poisson( log ) )
 f
 
 // End OMIT

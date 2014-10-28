@@ -17,7 +17,7 @@ func main() {
 /* Show in the slide
 // Start OMIT
 
-x <- db.data.frame('madlibtestdata.dt_abalone')
+x <- db.data.frame( 'madlibtestdata.dt_abalone' )
 
 // End OMIT
 */

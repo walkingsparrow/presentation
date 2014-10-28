@@ -17,7 +17,7 @@ func main() {
 /* Show in the slide
 // Start OMIT
 
-help(madlib.glm)
+help( madlib.glm )
 
 // End OMIT
 */

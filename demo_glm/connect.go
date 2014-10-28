@@ -17,8 +17,8 @@ func main() {
 /* Show in the slide
 // Start OMIT
 
-gp <- db.connect(port=16526, dbname='madlib', host='127.0.0.1', user='gpadmin') # 1, GPDB
-db.list()
+gp <- db.connect( port=16526, dbname='madlib', host='127.0.0.1', user='gpadmin' ) # 1, GPDB
+db.list( )
 
 // End OMIT
 */

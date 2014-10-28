@@ -17,7 +17,7 @@ func main() {
 /* Show in the slide
 // Start OMIT
 
-AIC(f)
+AIC( f )
 
 // End OMIT
 */

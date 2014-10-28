@@ -17,9 +17,11 @@ func main() {
 /* Show in the slide
 // Start OMIT
 
-dim(x)
-names(x)
-lookat(x, 10)
+dim( x )
+
+names( x )
+
+lookat( x, 10 )
 
 // End OMIT
 */

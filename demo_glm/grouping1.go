@@ -17,7 +17,7 @@ func main() {
 /* Show in the slide
 // Start OMIT
 
-f1 <- maldib.glm(rings ~ . - id | sex, data = x, family = poisson(log))
+f1 <- maldib.glm( rings ~ . - id | sex, data = x, family = poisson( log ) )
 f1
 
 // End OMIT

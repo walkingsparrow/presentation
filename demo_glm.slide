@@ -67,17 +67,17 @@ hqian@pivotal.io
 
 - Default: use the old linear and logistic regressions
 
-    madlib.glm(rings ~ length + diameter + shell + sex, data = x, family = gaussian)
+    madlib.glm( rings ~ length + diameter + shell + sex, data = x, family = gaussian )
 
-    madlib.glm(rings < 10 ~ length + diameter + shell + sex, data = x, family = binomial)
+    madlib.glm( rings < 10 ~ length + diameter + shell + sex, data = x, family = binomial )
 
 - Can choose to use our new GLM implmentation
 
-    madlib.glm(rings ~ length + diameter + shell + sex, data = x, family = gaussian,
-               control = list(use.glm=TRUE))
+    madlib.glm( rings ~ length + diameter + shell + sex, data = x, family = gaussian,
+                control = list( use.glm=TRUE ) )
 
-    madlib.glm(rings < 10 ~ length + diameter + shell + sex, data = x, family = binomial,
-               control = list(use.glm=TRUE))
+    madlib.glm( rings < 10 ~ length + diameter + shell + sex, data = x, family = binomial,
+                control = list( use.glm=TRUE ) )
 
 - Other `control` parameters
 
